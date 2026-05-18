@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Mi Portfolio</h1>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy un desarrollador Front-End aprendiendo con Start by Alura. Me encanta crear proyectos accesibles y funcionales.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <h3>Proyecto 1</h3>
+                <p>Un ejemplo de proyecto con HTML, CSS y JavaScript limpio y semántico.</p>
+                <button onclick="mostrarAlerta()">Ver más</button>
+            </div>
+            <div class="proyecto">
+                <h3>Proyecto 2</h3>
+                <p>Otro proyecto mostrando buenas prácticas y accesibilidad.</p>
+                <button onclick="mostrarAlerta()">Ver más</button>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
